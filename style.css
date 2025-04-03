@@ -1,0 +1,106 @@
+body, html {            
+    margin: 0;
+    padding: 0;
+    font-family:Verdana,Tahoma,Helvetica,sans-serif;
+    font-size:0.9em;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:1.3em;
+    color: #666666; 
+    background-color: #FFFFCC;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f6f4a1;
+    background: #FFFFCC url('images/BackHeader_Logo6.gif' ) repeat-x;           
+   
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding-top: 60px; /* Same as the header height */
+    padding-bottom: 100px; /* Space for the footer */
+    min-height: calc(100vh - 160px); /* 60px for header + 100px for footer */
+    max-width: 780px;
+    margin: auto;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 266px;
+    background-color: #FFFFCC;
+    background: #FFFFCC url('images/backFooter.gif') repeat-x;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 8px;
+}
+footer img {
+    align-content: center;          
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+footerText
+{
+    text-align: center;
+    margin-top: 4px;
+    align-content: center;
+}
+.content {
+    padding: 20px;
+    height: 20px;
+}
+.contentMain
+{
+    align-content: last baseline;    
+    text-align: justify;            
+    width: "790px";
+    margin: 0;
+}
+.sticky {
+    position: sticky;
+    top: 60px; /* Same as the header height */
+}
+section {
+    display: none; /* Hide sections by default */
+    margin-bottom: 40px;
+}
+
+.centeredImage
+{
+    text-align:center;
+    display:block;
+    margin-bottom: 10px;
+}
+h3 {
+    margin-bottom: 1px; /* Remove the default bottom margin of the h3 element */
+}
+
+p {
+    margin-top: 0; /* Remove the default top margin of the p element */
+}
