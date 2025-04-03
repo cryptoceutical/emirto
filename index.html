@@ -8,18 +8,33 @@
     <title>Emirto.nl - Management en advies bij gebiedsontwikkeling</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <header>
-        <h1>My Sticky Header</h1>
+         <img src="images/BackHeader_logoRightTrans6.gif" alt="Emirto.nl - homepage" align="right"  Width="248px" Height="93px">
     </header>
     <main>
         <div class="content">
             <nav>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#" onclick="showSection('about')">About</a>
+                <a href="#" onclick="showSection('contact')">Contact</a>
             </nav>
-            <h2>Welcome to My Responsive Site</h2>
-            <p>This is a single-page responsive modern HTML5 site with a sticky header and a footer containing images.</p>
+
+        </div>
+
+        <div class="contentMain">
+            <h3>Wie is emirto?</h3>
+            <p>
+                ir. Emirto Rienhart MCD (Tilburg, 1972) heeft na het afronden van zijn opleidingen Architectuur en Volkshuisvesting aan de TU Delft gewerkt als manager en adviseur voor diverse adviesbureaus, overheden (Rijk, provincies, gemeenten) woningcorporaties en commerciële vastgoed- en gebiedsontwikkelaars. 
+                Daarnaast was hij commissaris bij een woningcorporatie.​ Emirto heeft in 2007 de postdoctorale opleiding tot Master City Developer (MCD) aan de Erasmus Universiteit met succes afgerond.  <br /><br />
+            </p>
+            
+            <h3>Wat doet emirto?</h3>
+            <p>
+                Emirto concentreert zijn werkzaamheden op het managen en adviseren van duurzame vastgoed- en gebieds(her)ontwikkelingen. De nadruk ligt daarbij op de vroegere fasen van het ontwikkelingsproces. Een integrale aanpak is het uitgangspunt. De aanpak kenmerkt zich verder door creativiteit (denken buiten de kaders), verbinden van partijen, het inspireren en stimuleren van betrokkenen en een grote doortastendheid.
+            </p>
+        </div>
+   
             <section id="about">
                 <h3>About</h3>
                 <p>This section provides information about the site or the organization.</p>
@@ -32,18 +47,31 @@
                 <h3>Sticky Section</h3>
                 <p>This section will stick to the top of the viewport when you scroll past it.</p>
             </section>
-            <p>Scroll down to see the sticky section in action.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis, risus nec scelerisque placerat, purus leo tincidunt metus, a consequat augue nisi id odio. Nulla facilisi. Sed nec metus eu neque ultricies sollicitudin.</p>
-            <p>Donec vel lacus id nisi venenatis tincidunt. Proin vel sem sed sem tristique lacinia. Proin sed enim at elit congue tincidunt. Nunc fermentum, est non dignissim pharetra, arcu nisi fermentum metus, ac luctus erat sapien a magna. Duis luctus, quam vel vulputate viverra, orci erat sollicitudin purus, eu sagittis est arcu at risus.</p>
-            <p>Cras in scelerisque nisi. Sed vel quam sit amet orci faucibus pharetra. Integer id dui vel neque imperdiet elementum. Nam quis metus eu mi vehicula vehicula. Nam nec metus ac nulla viverra lacinia. Integer ut lorem sit amet enim tincidunt ultricies.</p>
-        </div>
+       </div>
     </main>
+
     <footer>
-        <img src="image1.png" alt="Image 1">
-        <img src="image2.png" alt="Image 2">
-        <img src="image3.png" alt="Image 3">
+        <img src="images/imgHome2.png" class="centeredImage" alt="image description" id="imgBottom2" width="500px" height="216" style="padding-bottom: 5px ;" /> 
+        
+            <div class="footerText">
+                    <b>BTW:</b> NL151720642B01 | <b>KvK Handelsregister:</b> 24449367 | <b>Telefoon:</b> 06-12099628​ | <b>Email:</b> <a class="deflink" href="mailto:mail@emirto.nl">mail@emirto.nl</a> 
+            </div>
+     
+            
     </footer>
+    
+    
     <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
