@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Emirto, emirto.nl, project, proces, programma, projectmanager, gebiedsontwikkeling, wijkontwikkeling, PPS, MCD, programmamanagement, procesmanager, management, leiderschap, verbinden, stedelijke ontwikkeling, stadsvernieuwing, samenwerken, grondexploitatie, ontwikkelingsplanologie, vernieuwen, stedenbouw, resultaat, publiek private samenwerking, " />
+    <title>Responsive Modern HTML5 Site</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding-top: 60px; /* Same as the header height */
+            padding-bottom: 100px; /* Space for the footer */
+            min-height: calc(100vh - 160px); /* 60px for header + 100px for footer */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer img {
+            max-width: 100px;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .sticky {
+            position: sticky;
+            top: 60px; /* Same as the header height */
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Sticky Header</h1>
+    </header>
+    <main>
+        <div class="content">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <h2>Welcome to My Responsive Site</h2>
+            <p>This is a single-page responsive modern HTML5 site with a sticky header and a footer containing images.</p>
+            <section id="about">
+                <h3>About</h3>
+                <p>This section provides information about the site or the organization.</p>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>This section provides contact information or a contact form.</p>
+            </section>
+            <section class="sticky">
+                <h3>Sticky Section</h3>
+                <p>This section will stick to the top of the viewport when you scroll past it.</p>
+            </section>
+            <p>Scroll down to see the sticky section in action.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis, risus nec scelerisque placerat, purus leo tincidunt metus, a consequat augue nisi id odio. Nulla facilisi. Sed nec metus eu neque ultricies sollicitudin.</p>
+            <p>Donec vel lacus id nisi venenatis tincidunt. Proin vel sem sed sem tristique lacinia. Proin sed enim at elit congue tincidunt. Nunc fermentum, est non dignissim pharetra, arcu nisi fermentum metus, ac luctus erat sapien a magna. Duis luctus, quam vel vulputate viverra, orci erat sollicitudin purus, eu sagittis est arcu at risus.</p>
+            <p>Cras in scelerisque nisi. Sed vel quam sit amet orci faucibus pharetra. Integer id dui vel neque imperdiet elementum. Nam quis metus eu mi vehicula vehicula. Nam nec metus ac nulla viverra lacinia. Integer ut lorem sit amet enim tincidunt ultricies.</p>
+        </div>
+    </main>
+    <footer>
+        <img src="image1.png" alt="Image 1">
+        <img src="image2.png" alt="Image 2">
+        <img src="image3.png" alt="Image 3">
+    </footer>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
